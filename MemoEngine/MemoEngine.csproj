@@ -161,7 +161,7 @@
     <Content Include="DotNetNote\BoardReply.aspx" />
     <Content Include="DotNetNote\BoardView.aspx" />
     <Content Include="DotNetNote\BoardWrite.aspx" />
-    <Content Include="DotNetNote\Controllers\BoardEditorFormControl.aspx" />
+    <Content Include="DotNetNote\Controls\BoardEditorFormControl.ascx" />
     <Content Include="DotNetNote\Default.aspx" />
     <Content Include="DotNetNote\ImageDown.aspx" />
     <Content Include="DotNetNote\ImageText.aspx" />
@@ -295,12 +295,12 @@
     <Compile Include="DotNetNote\BoardWrite.aspx.designer.cs">
       <DependentUpon>BoardWrite.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DotNetNote\Controllers\BoardEditorFormControl.aspx.cs">
-      <DependentUpon>BoardEditorFormControl.aspx</DependentUpon>
+    <Compile Include="DotNetNote\Controls\BoardEditorFormControl.ascx.cs">
+      <DependentUpon>BoardEditorFormControl.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DotNetNote\Controllers\BoardEditorFormControl.aspx.designer.cs">
-      <DependentUpon>BoardEditorFormControl.aspx</DependentUpon>
+    <Compile Include="DotNetNote\Controls\BoardEditorFormControl.ascx.designer.cs">
+      <DependentUpon>BoardEditorFormControl.ascx</DependentUpon>
     </Compile>
     <Compile Include="DotNetNote\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

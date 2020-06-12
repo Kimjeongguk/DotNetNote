@@ -1,4 +1,5 @@
 ﻿using System;
+using MemoEngine.DotNetNote.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,7 @@ namespace MemoEngine.DotNetNote
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            ctlBoardEditorFormControl.FormType = Models.BoardWriteFormType.Write;
         }
     }
 }
