@@ -1,0 +1,8 @@
+C:\Users\minds\source\repos\Duk\bin\Debug\netstandard2.0\Dul.deps.json
+C:\Users\minds\source\repos\Duk\bin\Debug\netstandard2.0\Dul.dll
+C:\Users\minds\source\repos\Duk\bin\Debug\netstandard2.0\Dul.pdb
+C:\Users\minds\source\repos\Duk\obj\Debug\netstandard2.0\Dul.csprojAssemblyReference.cache
+C:\Users\minds\source\repos\Duk\obj\Debug\netstandard2.0\Dul.AssemblyInfoInputs.cache
+C:\Users\minds\source\repos\Duk\obj\Debug\netstandard2.0\Dul.AssemblyInfo.cs
+C:\Users\minds\source\repos\Duk\obj\Debug\netstandard2.0\Dul.dll
+C:\Users\minds\source\repos\Duk\obj\Debug\netstandard2.0\Dul.pdb

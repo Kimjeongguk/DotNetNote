@@ -1,0 +1,10 @@
+C:\Users\minds\source\repos\DotNetNote.Database\bin\Debug\DotNetNote.Database.dacpac
+C:\Users\minds\source\repos\DotNetNote.Database\bin\Debug\DotNetNote.Database.dll
+C:\Users\minds\source\repos\DotNetNote.Database\bin\Debug\DotNetNote.Database.pdb
+C:\Users\minds\source\repos\DotNetNote.Database\obj\Debug\DotNetNote.Database.sqlprojAssemblyReference.cache
+C:\Users\minds\source\repos\DotNetNote.Database\obj\Debug\Model.xml
+C:\Users\minds\source\repos\DotNetNote.Database\obj\Debug\refactor.xml
+C:\Users\minds\source\repos\DotNetNote.Database\obj\Debug\postdeploy.sql
+C:\Users\minds\source\repos\DotNetNote.Database\obj\Debug\predeploy.sql
+C:\Users\minds\source\repos\DotNetNote.Database\obj\Debug\DotNetNote.Database.dll
+C:\Users\minds\source\repos\DotNetNote.Database\obj\Debug\DotNetNote.Database.pdb
