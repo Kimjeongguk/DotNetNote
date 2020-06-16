@@ -23,7 +23,7 @@ namespace MemoEngine.DotNetNote
             char c1 = (char)random.Next(65, 90);
             char c2 = (char)random.Next(48, 57);
             char c3 = (char)random.Next(97, 122);
-            char c4 = (char)random.Next(28, 57);
+            char c4 = (char)random.Next(48, 57);
 
             Session["ImageText"] = $"{c1}{c2}{c3}{c4}";
 
@@ -32,7 +32,7 @@ namespace MemoEngine.DotNetNote
             objGraphics.DrawString(c3.ToString(), new Font("Verdana", 11, FontStyle.Regular), Brushes.DarkBlue, new PointF(45, 1));
             objGraphics.DrawString(c4.ToString(), new Font("Arial", 12, FontStyle.Underline), Brushes.DarkBlue, new PointF(65, 1));
 
-            Response.ContentType = "inage/gif";
+            Response.ContentType = "image/gif";
             objBitmap.Save(Response.OutputStream, System.Drawing.Imaging.ImageFormat.Gif);
 
             objBitmap.Dispose();

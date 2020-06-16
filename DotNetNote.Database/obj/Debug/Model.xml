@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="DotNetNote.Database.dll" />
-			<Metadata Name="FileName" Value="C:\USERS\MINDS\SOURCE\REPOS\DOTNETNOTE.DATABASE\OBJ\DEBUG\DOTNETNOTE.DATABASE.DLL" />
+			<Metadata Name="FileName" Value="C:\USERS\MINDS\SOURCE\REPOS\DOTNETNOTE\DOTNETNOTE.DATABASE\OBJ\DEBUG\DOTNETNOTE.DATABASE.DLL" />
 			<Metadata Name="AssemblyName" Value="DotNetNote.Database" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="C:\Users\minds\source\repos\DotNetNote.Database\obj\Debug\DotNetNote.Database.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="C:\Users\minds\source\repos\DotNetNote\DotNetNote.Database\obj\Debug\DotNetNote.Database.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>
@@ -46,22 +46,6 @@
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
-				<Value><![CDATA[(GetDate())]]></Value>
-			</Property>
-			<Relationship Name="DefiningTable">
-				<Entry>
-					<References Name="[dbo].[NoteComments]" />
-				</Entry>
-			</Relationship>
-			<Relationship Name="ForColumn">
-				<Entry>
-					<References Name="[dbo].[NoteComments].[PostDate]" />
-				</Entry>
-			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="3" />
-		</Element>
-		<Element Type="SqlDefaultConstraint">
-			<Property Name="DefaultExpressionScript">
 				<Value><![CDATA[GetDate()]]></Value>
 			</Property>
 			<Relationship Name="DefiningTable">
@@ -74,7 +58,7 @@
 					<References Name="[dbo].[Notes].[PostDate]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="4" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="3" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
@@ -90,7 +74,7 @@
 					<References Name="[dbo].[Notes].[ReadCount]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="5" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="4" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
@@ -106,7 +90,7 @@
 					<References Name="[dbo].[Notes].[FileSize]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="6" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="5" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
@@ -122,7 +106,7 @@
 					<References Name="[dbo].[Notes].[DownCount]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="6" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
@@ -138,7 +122,7 @@
 					<References Name="[dbo].[Notes].[Step]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="8" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
@@ -154,7 +138,7 @@
 					<References Name="[dbo].[Notes].[RefOrder]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="9" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="8" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
@@ -170,7 +154,7 @@
 					<References Name="[dbo].[Notes].[AnswerNum]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="10" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="9" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
@@ -186,7 +170,7 @@
 					<References Name="[dbo].[Notes].[ParentNum]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="11" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="10" />
 		</Element>
 		<Element Type="SqlDefaultConstraint">
 			<Property Name="DefaultExpressionScript">
@@ -202,26 +186,23 @@
 					<References Name="[dbo].[Notes].[CommentCount]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="12" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="11" />
 		</Element>
-		<Element Type="SqlPrimaryKeyConstraint">
-			<Relationship Name="ColumnSpecifications">
-				<Entry>
-					<Element Type="SqlIndexedColumnSpecification">
-						<Relationship Name="Column">
-							<Entry>
-								<References Name="[dbo].[NoteComments].[Id]" />
-							</Entry>
-						</Relationship>
-					</Element>
-				</Entry>
-			</Relationship>
+		<Element Type="SqlDefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(GetDate())]]></Value>
+			</Property>
 			<Relationship Name="DefiningTable">
 				<Entry>
 					<References Name="[dbo].[NoteComments]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="13" />
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[NoteComments].[PostDate]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="12" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint">
 			<Relationship Name="ColumnSpecifications">
@@ -238,6 +219,25 @@
 			<Relationship Name="DefiningTable">
 				<Entry>
 					<References Name="[dbo].[Notes]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="13" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[NoteComments].[Id]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[NoteComments]" />
 				</Entry>
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="14" />
@@ -2008,7 +2008,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="13" />
+						<AttachedAnnotation Disambiguator="14" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2090,7 +2090,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="3" />
+						<AttachedAnnotation Disambiguator="12" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2135,7 +2135,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="14" />
+						<AttachedAnnotation Disambiguator="13" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2202,7 +2202,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="4" />
+						<AttachedAnnotation Disambiguator="3" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2266,7 +2266,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="5" />
+						<AttachedAnnotation Disambiguator="4" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2362,7 +2362,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="6" />
+						<AttachedAnnotation Disambiguator="5" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2378,7 +2378,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="7" />
+						<AttachedAnnotation Disambiguator="6" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2410,7 +2410,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="8" />
+						<AttachedAnnotation Disambiguator="7" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2426,7 +2426,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="9" />
+						<AttachedAnnotation Disambiguator="8" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2442,7 +2442,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="10" />
+						<AttachedAnnotation Disambiguator="9" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2458,7 +2458,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="11" />
+						<AttachedAnnotation Disambiguator="10" />
 					</Element>
 				</Entry>
 				<Entry>
@@ -2474,7 +2474,7 @@
 								</Element>
 							</Entry>
 						</Relationship>
-						<AttachedAnnotation Disambiguator="12" />
+						<AttachedAnnotation Disambiguator="11" />
 					</Element>
 				</Entry>
 				<Entry>

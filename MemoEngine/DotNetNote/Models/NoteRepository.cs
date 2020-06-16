@@ -15,7 +15,7 @@ namespace MemoEngine.DotNetNote.Models
 
         public NoteRepository()
         {
-            con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionsString"].ConnectionString);
+            con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
         }
 
         public int SaveOrUpdate(Note n, BoardWriteFormType formType)
@@ -32,25 +32,25 @@ namespace MemoEngine.DotNetNote.Models
             p.Add("@Encoding", value: n.Encoding, dbType: DbType.String);
             p.Add("@Homepage", value: n.Homepage, dbType: DbType.String);
             p.Add("@FileName", value: n.FileName, dbType: DbType.String);
-            p.Add("@FileSize", value: n.FileSize, dbType: DbType.String);
+            p.Add("@FileSize", value: n.FileSize, dbType: DbType.Int32);
 
             switch (formType)
             {
                 case BoardWriteFormType.Write:
                     p.Add("@PostIp", value: n.PostIp, dbType: DbType.String);
 
-                    r = con.Execute("WriteNote", p, commandType: CommandType.StoredProcedure);
+                    r = con.Execute("DNN_WriteNote", p, commandType: CommandType.StoredProcedure);
                     break;
                 case BoardWriteFormType.Modify:
                     p.Add("@ModifyIp", value: n.ModifyIp, dbType: DbType.String);
 
-                    r = con.Execute("ModifyNote", p, commandType: CommandType.StoredProcedure);
+                    r = con.Execute("DNN_ModifyNote", p, commandType: CommandType.StoredProcedure);
                     break;
                 case BoardWriteFormType.Reply:
-                    p.Add("PostIp", value: n.PostIp, dbType: DbType.String);
+                    p.Add("@PostIp", value: n.PostIp, dbType: DbType.String);
                     p.Add("@ParentNum", value: n.ParentNum, dbType: DbType.Int32);
 
-                    r = con.Execute("ReplyNote", p, commandType: CommandType.StoredProcedure);
+                    r = con.Execute("DNN_ReplyNote", p, commandType: CommandType.StoredProcedure);
                     break;
             }
             return r;
@@ -62,9 +62,9 @@ namespace MemoEngine.DotNetNote.Models
             {
                 SaveOrUpdate(vm, BoardWriteFormType.Write);
             }
-            catch(System.Exception ex)
+            catch(Exception ex)
             {
-                throw new System.Exception(ex.Message);
+                throw new Exception(ex.Message);
             }
         }
 
