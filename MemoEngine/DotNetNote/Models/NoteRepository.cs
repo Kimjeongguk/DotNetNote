@@ -99,7 +99,7 @@ namespace MemoEngine.DotNetNote.Models
             try
             {
                 var parameters = new DynamicParameters(new { Page = page });
-                return con.Query<Note>("ListNotes", parameters, commandType: CommandType.StoredProcedure).ToList();
+                return con.Query<Note>("DNN_ListNotes", parameters, commandType: CommandType.StoredProcedure).ToList();
             }
             catch(System.Exception ex)
             {
@@ -111,7 +111,7 @@ namespace MemoEngine.DotNetNote.Models
         {
             try
             {
-                return con.Query<int>("SearchNoteCount", new
+                return con.Query<int>("DNN_SearchNoteCount", new
                 {
                     SearchField = searchField,
                     SearchQuery = searchQuery
@@ -150,7 +150,7 @@ namespace MemoEngine.DotNetNote.Models
                 SearchField = searchField,
                 SearchQuery = searchQuery
             });
-            return con.Query<Note>("SearchNotes", parameters, commandType: CommandType.StoredProcedure).ToList();
+            return con.Query<Note>("DNN_SearchNotes", parameters, commandType: CommandType.StoredProcedure).ToList();
         }
 
         public void UpdateDownCount(string fileName)
@@ -167,11 +167,11 @@ namespace MemoEngine.DotNetNote.Models
         public Note GetNoteById(int id)
         {
             var parameters = new DynamicParameters(new { Id = id });
-            return con.Query<Note>("ViewNote", parameters, commandType: CommandType.StoredProcedure).SingleOrDefault();
+            return con.Query<Note>("DNN_ViewNote", parameters, commandType: CommandType.StoredProcedure).SingleOrDefault();
         }
         public int DeleteNote(int id, string password)
         {
-            return con.Execute("DeleteNote", new { Id = id, password = password }, commandType: CommandType.StoredProcedure);
+            return con.Execute("DNN_DeleteNote", new { Id = id, password = password }, commandType: CommandType.StoredProcedure);
         }
 
         public List<Note> GetNewPhotos()

@@ -1,16 +1,32 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BoardCommentDelete.aspx.cs" Inherits="MemoEngine.DotNetNote.BoardCommentDelete" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
-</body>
-</html>
+    <h2 style="text-align: center;">게시판</h2>
+    <span style="color: #ff0000">댓글 삭제 - 정확한 암호를 입력하시면 댓글을 삭제하실 수 있습니다.</span>
+    <hr />
+    <table style="width: 500px; margin-left: auto; margin-right: auto;">
+        <tr>
+            <td colspan="2">
+                <i class="glyphicon glyphicon-lock"></i>
+                <span style="font-size: 12pt;">댓글 삭제</span>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+                <span>해당 댓글을 삭제하시려면 올바른 암호를 입력하시오.</span>
+                <br />
+                암호(<u>P</u>):
+                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" MaxLength="40" Width="250px" AccessKey="P" TabIndex="2"
+                    CssClass="form-control" style="display: inline-block;"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <asp:Button ID="btnCommentDelete" runat="server" Text="확인" CssClass="btn btn-danger" OnClick="btnCommentDelete_Click" />
+                <asp:RequiredFieldValidator></asp:RequiredFieldValidator>
+            </td>
+        </tr>
+    </table>
+</asp:Content>

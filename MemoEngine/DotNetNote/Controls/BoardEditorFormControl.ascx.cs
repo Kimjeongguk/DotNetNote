@@ -121,7 +121,7 @@ namespace MemoEngine.DotNetNote.Controls
                 {
                     case BoardWriteFormType.Write:
                         repository.Add(note);
-                        Response.Redirect("~/BoardList.aspx");
+                        Response.Redirect("BoardList.aspx");
                         
                         break;
                     case BoardWriteFormType.Modify:
@@ -141,11 +141,11 @@ namespace MemoEngine.DotNetNote.Controls
                     case BoardWriteFormType.Reply:
                         note.ParentNum = Convert.ToInt32(_Id);
                         repository.ReplyNote(note);
-                        Response.Redirect("~/BoardList.aspx");
+                        Response.Redirect("BoardList.aspx");
                         break;
                     default:
                         repository.Add(note);
-                        Response.Redirect("~/BoardList.aspx");
+                        Response.Redirect("BoardList.aspx");
                         break;
 
                 }

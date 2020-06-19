@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\minds\\source\\repos\\Duk\\Dul.csproj": {}
+    "C:\\Users\\minds\\source\\repos\\DotNetNote\\Dul\\Dul.csproj": {}
   },
   "projects": {
-    "C:\\Users\\minds\\source\\repos\\Duk\\Dul.csproj": {
+    "C:\\Users\\minds\\source\\repos\\DotNetNote\\Dul\\Dul.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\minds\\source\\repos\\Duk\\Dul.csproj",
+        "projectUniqueName": "C:\\Users\\minds\\source\\repos\\DotNetNote\\Dul\\Dul.csproj",
         "projectName": "Dul",
-        "projectPath": "C:\\Users\\minds\\source\\repos\\Duk\\Dul.csproj",
+        "projectPath": "C:\\Users\\minds\\source\\repos\\DotNetNote\\Dul\\Dul.csproj",
         "packagesPath": "C:\\Users\\minds\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\minds\\source\\repos\\Duk\\obj\\",
+        "outputPath": "C:\\Users\\minds\\source\\repos\\DotNetNote\\Dul\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\minds\\AppData\\Roaming\\NuGet\\NuGet.Config",

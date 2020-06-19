@@ -9,7 +9,7 @@ namespace Dul
     {
         #region
 
-        public static string FuncStrp(object objStep)
+        public static string FuncStep(object objStep)
         {
             int intStep = Convert.ToInt32(objStep);
             string strTemp = String.Empty;
