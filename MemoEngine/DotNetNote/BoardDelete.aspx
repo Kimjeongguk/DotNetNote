@@ -1,16 +1,34 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BoardDelete.aspx.cs" Inherits="MemoEngine.DotNetNote.BoardDelete" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="BoardDelete.aspx.cs" Inherits="MemoEngine.DotNetNote.BoardDelete" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <script>
+        function ConfimDelete() {
+            var varFlag = false;
+            if (window.confirm("현재 글을 삭제하시겠습니까?")) {
+                varFlag = true;
+            }
+            else {
+                varFlag = false;
+            }
+            return varFlag;
+        }
+    </script>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
-</body>
-</html>
+    <h2 style="text-align: center;">게시판</h2>
+    <span style="color: #ff0000">글 삭제 -글을 삭제하려면 글 작성 시에 기록하였던 비밀번호가 필요합니다.</span>
+    <hr />
+    <div style="text-align: center;">
+        <asp:Label ID="lblId" runat="server" ForeColor="Red"></asp:Label>
+        번 글을 지우시겠습니까?
+    <br />
+        비밀번호 :
+        <asp:TextBox ID="txtPassword" runat="server" Width="120px" CssClass="form-control" Style="display: inline-block;"
+            TextMode="Password"></asp:TextBox>
+        <asp:Button ID="btnDelete" runat="server" Width="100px" CssClass="btn btn-danger" Style="display: inline-block;"
+            Text="지우기" OnClick="btnDelete_Click" />
+        <asp:HyperLink ID="lnKCancel" runat="server" CssClass="btn btn=default">취소</asp:HyperLink>
+        <br />
+        <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
+        <br />
+    </div>
+</asp:Content>

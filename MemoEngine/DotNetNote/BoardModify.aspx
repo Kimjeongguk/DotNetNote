@@ -1,16 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BoardModify.aspx.cs" Inherits="MemoEngine.DotNetNote.BoardModify" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="BoardModify.aspx.cs" Inherits="MemoEngine.DotNetNote.BoardModify" %>
 
-<!DOCTYPE html>
+<%@ Register Src="~/DotNetNote/Controls/BoardEditorFormControl.ascx" TagPrefix="uc1" TagName="BoardEditorFormControl.ascx" %>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
-</body>
-</html>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <uc1:BoardEditorFormControl.ascx runat="server" ID="ctlBoardEditorFormControl" ></uc1:BoardEditorFormControl.ascx>
+</asp:Content>

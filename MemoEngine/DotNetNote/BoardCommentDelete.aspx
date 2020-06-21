@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BoardCommentDelete.aspx.cs" Inherits="MemoEngine.DotNetNote.BoardCommentDelete" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="BoardCommentDelete.aspx.cs" Inherits="MemoEngine.DotNetNote.BoardCommentDelete" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -19,13 +19,17 @@
                 <br />
                 암호(<u>P</u>):
                 <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" MaxLength="40" Width="250px" AccessKey="P" TabIndex="2"
-                    CssClass="form-control" style="display: inline-block;"></asp:TextBox>
+                    CssClass="form-control" style="display: inline-block;">
+                </asp:TextBox>
             </td>
         </tr>
         <tr>
             <td colspan="2" style="text-align: center;">
                 <asp:Button ID="btnCommentDelete" runat="server" Text="확인" CssClass="btn btn-danger" OnClick="btnCommentDelete_Click" />
-                <asp:RequiredFieldValidator></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="valPassword" runat="server" ShowMessageBox="true" ShowSummary="false"></asp:RequiredFieldValidator>
+                <input type="button" value="뒤로" onclick="history.go(-1);" class="btn btn-default" />
+                <br />
+                <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
             </td>
         </tr>
     </table>

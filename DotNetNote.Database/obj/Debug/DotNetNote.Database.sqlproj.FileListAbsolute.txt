@@ -18,3 +18,9 @@ C:\Users\minds\source\repos\DotNetNote\DotNetNote.Database\obj\Debug\postdeploy.
 C:\Users\minds\source\repos\DotNetNote\DotNetNote.Database\obj\Debug\predeploy.sql
 C:\Users\minds\source\repos\DotNetNote\DotNetNote.Database\obj\Debug\DotNetNote.Database.dll
 C:\Users\minds\source\repos\DotNetNote\DotNetNote.Database\obj\Debug\DotNetNote.Database.pdb
+C:\Users\start\source\repos\DotNetNote\DotNetNote.Database\bin\Debug\DotNetNote.Database.dacpac
+C:\Users\start\source\repos\DotNetNote\DotNetNote.Database\bin\Debug\DotNetNote.Database.dll
+C:\Users\start\source\repos\DotNetNote\DotNetNote.Database\bin\Debug\DotNetNote.Database.pdb
+C:\Users\start\source\repos\DotNetNote\DotNetNote.Database\obj\Debug\DotNetNote.Database.sqlprojAssemblyReference.cache
+C:\Users\start\source\repos\DotNetNote\DotNetNote.Database\obj\Debug\DotNetNote.Database.dll
+C:\Users\start\source\repos\DotNetNote\DotNetNote.Database\obj\Debug\DotNetNote.Database.pdb
